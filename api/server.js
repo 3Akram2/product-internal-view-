@@ -12,7 +12,7 @@ app.use(express.json());
 // app.use(bodyParser.urlencoded({limit:"30mb ", extended:true }));
 app.use(cors());
 app.use('/products',productRoutes)
-mongoose.connect('mongodb://127.0.0.1:27017/products',{
+mongoose.connect('mongodb://localhost:27017/products',{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 })
